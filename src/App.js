@@ -37,10 +37,18 @@ function App() {
       //getMe method gets the end user info and you could display it in console
       spotify.getMe().then(user => {
         dispatch({
-          type: 'SET_USER',
+          type: "SET_USER",
           user: user,
         });
       }); // get the user account
+
+      //Accessing the api and get the current user's playlist 
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists,
+        });
+      });
     }
 
     //console.log("I have a token ", token);
