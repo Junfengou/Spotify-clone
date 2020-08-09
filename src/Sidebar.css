@@ -1,0 +1,23 @@
+.sidebar {
+    height: 100vh; /*Taking up 100% of the vertical view port height */
+    flex: 0.2; /*Take up 20% of the width and the body takes the remaining 80%  */
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 230px;
+    height: 100vh;
+    background-color: #040404;
+}
+
+.sidebar__logo {
+    object-fit: contain; /*Keeps the aspect ratio no matter how to stretch the logo*/
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
+}
+
+.sidebar__title {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
