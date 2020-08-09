@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-class Player extends Component {
-    render() {
-        return (
-            <div>
-                <h3>Welcome to spotify</h3>
-            </div>
-        );
-    }
+function Player ({ spotify }) {
+    return (
+        <div>
+            <h3>Welcome to spotify</h3>
+        </div>
+    );
 }
 
 export default Player;
