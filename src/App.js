@@ -49,6 +49,14 @@ function App() {
           playlists: playlists,
         });
       });
+
+      //Getting the discover weekly from the spotify api
+      spotify.getPlaylist("37i9dQZEVXcStRONj1tvRY").then((response) =>
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response
+        })
+      );
     }
 
     //console.log("I have a token ", token);
